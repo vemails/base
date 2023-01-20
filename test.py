@@ -9,3 +9,5 @@ driver.find_element(By.ID, 'searchInput').send_keys('Test automation')
 driver.find_element(By.XPATH, '//button[@type="submit"]').click()
 
 assert 'Test automation' in driver.page_source
+
+driver.close()
